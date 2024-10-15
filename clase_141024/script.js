@@ -53,3 +53,29 @@ function hello(x,y=0) {
 }
 console.log(hello(10));
 */
+const user ={
+    nombre: 'Isaac',
+    apellidoM: 'Montes',
+    edad: 15,
+    edoCivil: 'soltero',
+    domicilio:{
+        ciudad: 'CDMX',
+        calle: 'NOSE',
+        numero: 123
+    },
+    amigos:['Angel', 'Eduardo'],
+    activo:true,
+    sendMensaje: function mame() {
+        return 'mensaje enviado'
+    }
+}
+//alert ciudad, calle, numero...
+//consola, los amigos
+//alert activo o no
+//consola nombre, apellidoM, edoCivil
+//alert (estado del mensaje)
+alert(`${user.domicilio.ciudad}, ${user.domicilio.calle} ${user.domicilio.numero}`)
+console.log(user.amigos);
+alert(user.activo)
+console.log(`${user.nombre} ${user.apellidoM}, ${user.estadoCivil}`);
+alert(user.sendMensaje())
