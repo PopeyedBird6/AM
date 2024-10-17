@@ -77,5 +77,5 @@ const user ={
 alert(`${user.domicilio.ciudad}, ${user.domicilio.calle} ${user.domicilio.numero}`)
 console.log(user.amigos);
 alert(user.activo)
-console.log(`${user.nombre} ${user.apellidoM}, ${user.estadoCivil}`);
+console.log(`${user.nombre} ${user.apellidoM}, ${user.edoCivil}`);
 alert(user.sendMensaje())
