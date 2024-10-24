@@ -1,16 +1,16 @@
 const list = document.getElementById('lis');
-const form = document.getElementById('en');
+const cues = document.getElementById('en');
 
-form.addEventListener('click', () => {
-    const taskValue = document.getElementById('a').value;
+cues.addEventListener('click', () => {
+    const inputhtml = document.getElementById('a').value;
 
-    if (taskValue.trim() !== '') {
-        const listItem = document.createElement('li');
-        listItem.innerHTML = `${taskValue} <button class="delete-btn">Eliminar</button>`;
-        list.appendChild(listItem);
+    if (inputhtml.trim() !== '') {
+        const lista = document.createElement('li');
+        lista.innerHTML = `${inputhtml} <button class="botondeborrar">Eliminar</button>`;
+        list.appendChild(lista);
 
-        listItem.querySelector('.delete-btn').addEventListener('click', function() {
-            list.removeChild(listItem);
+        lista.querySelector('.botondeborrar').addEventListener('click', function() {
+            list.removeChild(lista);
         });
 
         document.getElementById('a').value = '';
