@@ -6,7 +6,7 @@ cues.addEventListener('click', () => {
 
     if (inputhtml.trim() !== '') {
         const lista = document.createElement('li');
-        lista.innerHTML = `${inputhtml} <button class="botondeborrar">Eliminar</button>`;
+        lista.innerHTML = `${inputhtml} <button class="botondeborrar">Borrar</button>`;
         list.appendChild(lista);
 
         lista.querySelector('.botondeborrar').addEventListener('click', function() {
