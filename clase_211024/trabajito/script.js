@@ -16,6 +16,6 @@ form.addEventListener('click', () => {
         document.getElementById('a').value = '';
     }
     
-    console.log('Elemento añadido a la lista');
+    //console.log('agregao');
 });
 
